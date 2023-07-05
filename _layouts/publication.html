@@ -10,6 +10,18 @@ tail_includes:
 {% include lang.html %}
 
 <h1 data-toc-skip, style="text-align:center;">{{ page.title }}</h1>
+<h2 data-toc-skip, style="text-align:center;">{% assign authors = page.authors %}
+    <em>
+        {% if authors %}
+        {% for author in authors %}
+        <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
+        {% unless forloop.last %}</em>, <em>{% endunless %}
+            {% endfor %}
+            {% else %}
+            <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
+            {% endif %}
+    </em>
+</h2>
 
 <div class="post-meta text-muted">
     <div class="d-flex justify-content-between">
@@ -34,12 +46,6 @@ tail_includes:
         {% endif %}
         </em>
       </span>
-
-      <div>
-        <!-- read time -->
-        {% include read-time.html content=content prompt=true lang=lang %}
-      </div>
-
     </div> <!-- .d-flex -->
 
   {% if page.image %}
