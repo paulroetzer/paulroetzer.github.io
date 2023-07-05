@@ -1,5 +1,5 @@
 ---
 layout: publications
-icon: fas fa-archive
-order: 3
+icon: fas fa-graduation-cap
+order: 2
 ---
