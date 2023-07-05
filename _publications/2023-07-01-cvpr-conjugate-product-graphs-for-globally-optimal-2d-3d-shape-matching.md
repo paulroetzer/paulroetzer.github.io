@@ -7,8 +7,8 @@ pin: true
 math: true
 mermaid: false
 image:
-  path: /assets/img/posts/gif_from_plot/torusrot_nobounce.gif
-  alt: Animated Plot from Matlab
+  path: /assets/img/publications/conjprodgraphs.jpg
+  alt: Ours vs Lähner et al.
 ---
 
 ## Abstract
