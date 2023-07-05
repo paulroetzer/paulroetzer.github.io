@@ -4,16 +4,44 @@ refactor: true
 panel_includes:
   - toc
 tail_includes:
-  - related-posts
-  - post-nav
   - comments
 ---
 
 {% include lang.html %}
 
-<h1 data-toc-skip>{{ page.title }}</h1>
+<h1 data-toc-skip, style="text-align:center;">{{ page.title }}</h1>
 
 <div class="post-meta text-muted">
+    <div class="d-flex justify-content-between">
+      <!-- author(s) -->
+      <span>
+        {% if page.author %}
+          {% assign authors = page.author %}
+        {% elsif page.authors %}
+          {% assign authors = page.authors %}
+        {% endif %}
+
+        {{ site.data.locales[lang].post.written_by }}
+
+        <em>
+        {% if authors %}
+          {% for author in authors %}
+            <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
+            {% unless forloop.last %}</em>, <em>{% endunless %}
+          {% endfor %}
+        {% else %}
+          <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
+        {% endif %}
+        </em>
+      </span>
+
+      <div>
+        <!-- read time -->
+        {% include read-time.html content=content prompt=true lang=lang %}
+      </div>
+
+    </div> <!-- .d-flex -->
+
   {% if page.image %}
     {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
     {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
@@ -32,36 +60,6 @@ tail_includes:
       {%- endif -%}
     </div>
   {% endif %}
-
-  <div class="d-flex justify-content-between">
-    <!-- author(s) -->
-    <span>
-      {% if page.author %}
-        {% assign authors = page.author %}
-      {% elsif page.authors %}
-        {% assign authors = page.authors %}
-      {% endif %}
-
-      {{ site.data.locales[lang].post.written_by }}
-
-      <em>
-      {% if authors %}
-        {% for author in authors %}
-          <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
-          {% unless forloop.last %}</em>, <em>{% endunless %}
-        {% endfor %}
-      {% else %}
-        <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
-      {% endif %}
-      </em>
-    </span>
-
-    <div>
-      <!-- read time -->
-      {% include read-time.html content=content prompt=true lang=lang %}
-    </div>
-
-  </div> <!-- .d-flex -->
 
 </div> <!-- .post-meta -->
 
