@@ -131,6 +131,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  publications:
+    output: true
+    #permalink: /:collection/:name
 
 defaults:
   - scope:
@@ -161,6 +164,12 @@ defaults:
       path: assets/js/dist
     values:
       swcache: true
+  # _publications
+  - scope:
+      path: "_publications"
+      type: publications
+    values:
+      comments: false
 
 sass:
   style: compressed
