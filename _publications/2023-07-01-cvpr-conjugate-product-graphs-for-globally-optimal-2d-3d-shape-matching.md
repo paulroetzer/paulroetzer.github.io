@@ -1,9 +1,8 @@
 ---
+layout: publication
 title: "Conjugate Product Graphs for Globally Optimal 2D-3D Shape Matching"
 author: 'Paul Roetzer, <b>Zorah Lähner</b>, Florian Bernard'
 date: 2023-06-17 12:00:00 +0800
-categories: [Shapes, Correspondences]
-tags: [publication]
 pin: true
 math: true
 mermaid: false

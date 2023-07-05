@@ -133,7 +133,7 @@ collections:
     sort_by: order
   publications:
     output: true
-    #permalink: /:collection/:name
+    #permalink: /:collection/:year/:name
 
 defaults:
   - scope:
