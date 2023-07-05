@@ -6,6 +6,10 @@
 - type: twitter
   icon: "fab fa-twitter"
 
+ - type: linkedin
+   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+   url:  ''                  # Fill with your Linkedin homepage
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
@@ -19,9 +23,7 @@
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 #
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
+
 #
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
