@@ -1,3 +1,17 @@
+---
+title: Generate Animated GIFs from Matlab Plot
+author: Paul Roetzer
+date: 2023-07-05 11:33:00 +0800
+categories: [Blog]
+tags: [Matlab]
+pin: true
+math: false
+mermaid: true
+image:
+  path: assets/img/posts/gif_from_plot/torusrot_nobounce.gif
+  alt: Animated Plot from Matlab
+---
+
 # Generate animated GIFs from Plot Window
 
 I recently had to create such an animation from a plot in matlab:
