@@ -2,13 +2,13 @@
 title: Generate Animated GIFs from Matlab Plot
 author: Paul Roetzer
 date: 2023-07-05 11:33:00 +0800
-categories: [Blog]
-tags: [Matlab]
+categories: [Blog, Matlab]
+tags: [matlab]
 pin: true
 math: false
-mermaid: true
+mermaid: false
 image:
-  path: assets/img/posts/gif_from_plot/torusrot_nobounce.gif
+  path: /assets/img/posts/gif_from_plot/torusrot_nobounce.gif
   alt: Animated Plot from Matlab
 ---
 
@@ -16,7 +16,7 @@ image:
 
 I recently had to create such an animation from a plot in matlab:
 
-<img src="assets/img/posts/gif_from_plot/torusrot_nobounce.gif"  width="300"></img>
+<img src="/assets/img/posts/gif_from_plot/torusrot_nobounce.gif"  width="300"></img>
 
 ### 🐢 Prepare the animated plot
 This code animates some data by rotating it around z-axis:
@@ -45,7 +45,7 @@ end
 Gifs can be created in Matlab by using `exportgraphics(gca,"filename.gif", "Append",true)` (Note: the append options HAS to be true).
 Unfortunately this might lead to some bouncy animation:
 
-<img src="assets/img/posts/gif_from_plot/torusrot.gif"  width="100"></img>
+<img src="/assets/img/posts/gif_from_plot/torusrot.gif"  width="100"></img>
 
 This is due to some weird autoscaling (despite the manual axis limits we already set).
 To overcome this, we can plot 4 points marking the boundary (these points will appear in the final gif but we can crop them with other software 🥴).
