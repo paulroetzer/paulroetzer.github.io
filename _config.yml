@@ -166,10 +166,12 @@ defaults:
       swcache: true
   # _publications
   - scope:
-      path: "_publications"
+      path: ""
       type: publications
     values:
-      comments: false
+      layout: publication
+      comments: true
+      toc: true
 
 sass:
   style: compressed

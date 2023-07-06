@@ -8,6 +8,8 @@ tail_includes:
 ---
 
 {% include lang.html %}
+{% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
+{% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
 
 <h1 data-toc-skip, style="text-align:center;">{{ page.title }}</h1>
 <h2 data-toc-skip, style="text-align:center;">{% assign authors = page.authors %}
@@ -22,6 +24,10 @@ tail_includes:
             {% endif %}
     </em>
 </h2>
+
+<h3 data-toc-skip, style="text-align:center;">
+    {% capture cur_year %}{{ site.date | date: "%Y" }}{% endcapture %}
+    {{page.venue}}, {{cur_year}}</h3>
 
 
 <div class="post-meta text-muted">
