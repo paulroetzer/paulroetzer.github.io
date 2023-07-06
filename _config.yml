@@ -20,7 +20,7 @@ timezone: Europe/Berlin
 
 title: Paul Roetzer # the main title
 
-tagline: PhD Student at University of Bonn # it will display as the sub-title
+tagline: PhD Student at Uni Bonn # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   I am doing research on 2D and 3D shapes, shape analysis and optimisation methods.
