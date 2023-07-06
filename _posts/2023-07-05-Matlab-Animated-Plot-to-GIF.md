@@ -41,13 +41,13 @@ end
 ### 🌅 Export Gif
 Gifs can be created in Matlab by using `exportgraphics(gca,"filename.gif", "Append",true)` (Note: the append options HAS to be true).
 Unfortunately this might lead to some bouncy animation:
-![Desktop View](/assets/img/posts/gif_from_plot/torusrot.gif){: width="899" height="730" }
+![Desktop View](/assets/img/posts/gif_from_plot/torusrot.gif){: width="500" height="400" }
 
 This is due to some weird autoscaling (despite the manual axis limits we already set).
 To overcome this, we can plot 4 points marking the boundary (these points will appear in the final gif but we can crop them with other software 🥴).
 The final code looks as follows:
 
-```
+```matlab
 angle_step = 0.01;
 figure;
 for i = 0:angle_step:2*pi
