@@ -9,6 +9,7 @@ mermaid: false
 image:
   path: /assets/img/publications/conjprodgraphs.jpg
   alt: Ours vs Lähner et al.
+venue: CVPR
 ---
 
 ## Abstract

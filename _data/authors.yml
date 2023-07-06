@@ -1,18 +1,36 @@
 me:
   name: Paul Roetzer
   url: https://paulroetzer.github.io
+  affiliation: University of Bonn
 fb:
   name: Florian Bernard
   url: https://lovc.cs.uni-bonn.de/index.php/team/florian-bernard/
+  affiliation: University of Bonn
 zl:
   name: Zorah Lähner
   url: https://zorah.github.io/
+  affiliation: University of Siegen
 dongc:
   name: Dongliang Cao
   url: https://dongliangcao.github.io/
+  affiliation: University of Bonn
 ps:
   name: Paul Swoboda
   url: http://paulswoboda.net/
+  affiliation: University of Mannheim
 dc:
   name: Daniel Cremers
   url: https://cvg.cit.tum.de/members/cremers
+  affiliation: TUM
+andreah:
+  name: Andrea Hornakova
+  url: https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/andrea-hornakova
+  affiliation: MPI
+bogdan:
+  name: Bogdan Savchynskyy
+  url: https://hci.iwr.uni-heidelberg.de/vislearn/people/bogdan/
+  affiliation: Heidelberg University
+ahmed:
+  name: Ahmed Abbas
+  url: https://aabbas90.github.io/
+  affiliation: MPI
