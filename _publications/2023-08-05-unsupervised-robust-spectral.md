@@ -8,4 +8,4 @@ math: true
 mermaid: false
 ---
 
-<meta http-equiv="refresh" content="0; URL="https://arxiv.org/abs/2304.14419" />
+<meta http-equiv="refresh" content="0; URL=https://arxiv.org/abs/2304.14419" />
