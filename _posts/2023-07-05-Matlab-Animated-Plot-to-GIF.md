@@ -4,7 +4,7 @@ author: Paul Roetzer
 date: 2023-07-05 11:33:00 +0800
 categories: [Blog, Matlab]
 tags: [matlab]
-pin: true
+pin: false
 math: false
 mermaid: false
 ---

@@ -3,8 +3,8 @@ layout: publication
 title: "Conjugate Product Graphs for Globally Optimal 2D-3D Shape Matching"
 authors: [me, zl, fb]
 date: 2023-06-18 12:00:00 +0800
-pin: true
-math: true
+pin: false
+math: false
 mermaid: false
 image:
   path: /assets/img/publications/conjprodgraphs.jpg

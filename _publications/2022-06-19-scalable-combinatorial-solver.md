@@ -3,7 +3,7 @@ layout: publication
 title: "A Scalable Combinatorial Solver for Elastic Geometrically Consistent 3D Shape Matching"
 authors: [me, ps, dc, fb]
 date: 2022-06-18 12:00:00 +0800
-pin: true
+pin: false
 math: true
 mermaid: false
 venue: CVPR
