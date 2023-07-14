@@ -9,4 +9,5 @@ math: false
 mermaid: false
 ---
 
+Our Paper "Conjugate Product Graphs for Globally Optimal 2D-3D Shape Matching" got accepted to CVPR 2023 in Vancouver!
 <meta http-equiv="refresh" content="0; URL=https://paulroetzer.github.io/publications/2023-06-18-conjugate-product-graphs-2d-3d.html" />
