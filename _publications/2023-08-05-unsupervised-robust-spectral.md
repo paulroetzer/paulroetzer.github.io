@@ -26,7 +26,7 @@ youtube: https://www.youtube.com/watch?v=Gt-wvLPceRc&t=4s
 
 ## All Qualitative Results
 
-Visit our <a href="https://github.com/dongliangcao/urssm">project page</a> to view all qualitative results!
+Visit our <a href="https://dongliangcao.github.io/urssm/">project page</a> to view all qualitative results!
 
 ## Bibtex
 ```bibtex
