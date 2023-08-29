@@ -7,7 +7,7 @@ pin: false
 math: true
 mermaid: false
 image:
-  path: /assets/img/publications/predictionprob.png
+  path: /assets/img/publications/predictionprob.jpg
   alt: Illustration of Different Prediction Problems
 venue: Arxiv 2022
 arxiv: https://arxiv.org/abs/2202.03574
