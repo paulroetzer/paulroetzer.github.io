@@ -30,6 +30,7 @@
   or page.layout == 'archives'
   or page.layout == 'category'
   or page.layout == 'tag'
+  or page.layout == 'publication'
 %}
   {% assign locale = site.lang | split: '-' | first %}
 
@@ -57,9 +58,9 @@
 {% include jsdelivr-combine.html urls=urls %}
 
 {% case page.layout %}
-  {% when 'home', 'categories', 'post', 'page' %}
+  {% when 'home', 'categories', 'post', 'publication', 'page' %}
     {% assign js = page.layout %}
-  {% when 'archives', 'category', 'tag' %}
+  {% when 'archives', 'category', 'publications', 'tag' %}
     {% assign js = 'misc' %}
   {% else %}
     {% assign js = 'commons' %}
