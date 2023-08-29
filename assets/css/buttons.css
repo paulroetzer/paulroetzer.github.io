@@ -38,4 +38,5 @@
   .link-block {
     /* Center horizontally*/
     margin: 0 auto;
+    padding: 8px 8px;
   }
