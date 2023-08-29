@@ -2,6 +2,7 @@
 layout: page
 # The Archives of Publications.
 ---
+<link rel="stylesheet" href="/assets/css/venue.css">
 
 {% include lang.html %}
 
@@ -27,7 +28,8 @@ layout: page
     <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
       {{ post.date | date: df_strftime_m }}
     </span>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="venue">{{ post.venue}}</span>
+    <span><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
   </li>
 
   {% if forloop.last %}</ul>{% endif %}
