@@ -28,8 +28,8 @@ layout: page
     <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
       {{ post.date | date: df_strftime_m }}
     </span>
-    <span class="venue">{{ post.venue}}</span>
     <span><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
+    <span class="venue">{{ post.venue}}</span>
   </li>
 
   {% if forloop.last %}</ul>{% endif %}
