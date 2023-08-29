@@ -10,3 +10,5 @@ mermaid: false
 ---
 
 Our paper "SIGMA: Scale-Invariant Global Sparse Shape Matching" got accepted to ICCV 2023 in Paris!
+
+<meta http-equiv="refresh" content="0; URL=https://paulroetzer.github.io/publications/2023-08-28-sigma.html" />
