@@ -6,10 +6,13 @@ panel_includes:
 tail_includes:
   - comments
 ---
+<link rel="stylesheet" href="/assets/css/bulma.min.css">
 
 {% include lang.html %}
 {% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
 {% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
+<link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 <h1 data-toc-skip, style="text-align:center;">{{ page.title }}</h1>
 <h2 data-toc-skip, style="text-align:center;">{% assign authors = page.authors %}
@@ -21,13 +24,73 @@ tail_includes:
             {% endfor %}
             {% else %}
             <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
-            {% endif %}
+        {% endif %}, 
+        {{page.venue}}
     </em>
 </h2>
 
-<h3 data-toc-skip, style="text-align:center;">
-    {% capture cur_year %}{{ site.date | date: "%Y" }}{% endcapture %}
-    {{page.venue}}</h3>
+
+<div style="text-align:center; width:100%;">
+    <!-- PDF Link. -->
+    {% if page.pdf %}
+      <span class="link-block">
+        <a href="{{page.pdf}}"
+          class="button">
+          <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+          </span>
+          <span>Paper</span>
+        </a>
+      </span>
+    {% endif %}
+    {% if page.arxiv %}
+      <span class="link-block">
+        <a href="{{page.arxiv}}"
+          class="button">
+          <span class="icon">
+              <i class="ai ai-arxiv"></i>
+          </span>
+          <span>arXiv</span>
+        </a>
+      </span>
+    {% endif %}
+    <!-- Video Link. -->
+    {% if page.youtube %}
+      <span class="link-block">
+        <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+          class="button">
+          <span class="icon">
+              <i class="fab fa-youtube"></i>
+          </span>
+          <span>Video</span>
+        </a>
+      </span>
+    {% endif %}
+    <!-- Code Link. -->
+    {% if page.github %}
+      <span class="link-block">
+        <a href="{{page.github}}"
+          class="button">
+          <span class="icon">
+              <i class="fab fa-github"></i>
+          </span>
+          <span>Code</span>
+          </a>
+      </span>
+    {% endif %}
+    <!-- Dataset Link. -->
+    {% if page.dataseturl %}
+      <span class="link-block">
+        <a href="{{page.dataseturl}}"
+          class="button">
+          <span class="icon">
+              <i class="far fa-images"></i>
+          </span>
+          <span>Data</span>
+          </a>
+      </span>
+    {% endif %}
+</div>
 
 
 <div class="post-meta text-muted">
