@@ -10,6 +10,10 @@ image:
   path: /assets/img/publications/conjprodgraphs.jpg
   alt: Ours vs Lähner et al.
 venue: CVPR 2023
+arxiv: https://arxiv.org/abs/2211.11589
+github: https://github.com/paul0noah/sm-2D3D
+youtube: https://www.youtube.com/watch?v=qr_-n8NHWC4
+pdf: https://openaccess.thecvf.com/content/CVPR2023/supplemental/Roetzer_Conjugate_Product_Graphs_CVPR_2023_supplemental.pdf
 ---
 
 ## Abstract
