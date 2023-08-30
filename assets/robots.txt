@@ -1,0 +1,18 @@
+---
+permalink: /robots.txt
+# The robots rules
+---
+
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: DuckDuckBot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
