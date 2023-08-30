@@ -7,10 +7,11 @@ layout: page
 
 {% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
 {% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
+{% assign posts = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
 <div id="archives" class="pl-xl-3">
 
-{% for post in site.posts %}
+{% for post in posts %}
   {% capture cur_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 
   {% if cur_year != last_year %}
