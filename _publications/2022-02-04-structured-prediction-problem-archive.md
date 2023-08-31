@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Structured Prediction Problem Archive"
-authors: [ps, me, andreah, bodgan, ]
+authors: [ps, me, andreah, bogdan, aa]
 date: 2022-02-04 12:00:00 +0800
 pin: false
 math: true
