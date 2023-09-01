@@ -1,10 +1,9 @@
 ---
 title: Change Datatip to Custom Value in Matlab Plot
-author: Paul Roetzer
+author: me
 date: 2023-08-31 11:33:00 +0800
 categories: [Blog, Matlab]
 tags: [matlab]
-authors: [me]
 pin: false
 math: false
 mermaid: false

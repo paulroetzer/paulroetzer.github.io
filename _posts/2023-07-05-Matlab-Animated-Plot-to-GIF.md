@@ -1,10 +1,9 @@
 ---
 title: Generate Animated GIFs from Matlab Plot
-author: Paul Roetzer
+author: me
 date: 2023-07-05 11:33:00 +0800
 categories: [Blog, Matlab]
 tags: [matlab]
-authors: [me]
 pin: false
 math: false
 mermaid: false

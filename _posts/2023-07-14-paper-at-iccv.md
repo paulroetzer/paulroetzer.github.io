@@ -1,6 +1,6 @@
 ---
 title: One Paper at ICCV 2023
-author: Paul Roetzer
+author: me
 date: 2023-07-14 11:33:00 +0800
 categories: [News, Publications]
 tags: [news]

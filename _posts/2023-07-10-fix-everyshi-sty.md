@@ -1,10 +1,9 @@
 ---
 title: Fix \@EveryShipout@AtNextHook Error
-author: Paul Roetzer
+author: me
 date: 2023-07-10 11:33:00 +0800
 categories: [Blog, Latex]
 tags: [latex]
-authors: [me]
 pin: false
 math: false
 mermaid: false
