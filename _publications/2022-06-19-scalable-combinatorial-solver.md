@@ -20,6 +20,10 @@ pdf: https://csdl-downloads.ieeecomputer.org/proceedings/cvpr/2022/6946/00/69460
 
 > We present a scalable combinatorial algorithm for globally optimizing over the space of geometrically consistent mappings between 3D shapes. We use the mathematically elegant formalism proposed by Windheuser et al. where 3D shape matching was formulated as an integer linear program over the space of orientation-preserving diffeomorphisms. Until now, the resulting formulation had limited practical applicability due to its complicated constraint structure and its large size. We propose a novel primal heuristic coupled with a Lagrange dual problem that is several orders of magnitudes faster compared to previous solvers. This allows us to handle shapes with substantially more triangles than previously solvable. We demonstrate compelling results on diverse datasets, and, even showcase that we can address the challenging setting of matching two partial shapes without availability of complete shapes.
 
+## Video
+
+{% include embed/youtube.html id='uPwqOXYw1kw' %}
+
 ## Bibtex
 ```bibtex
 @inproceedings{roetzer2022scalable,
