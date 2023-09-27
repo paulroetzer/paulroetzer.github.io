@@ -13,7 +13,7 @@ venue: CVPR 2023
 arxiv: https://arxiv.org/abs/2211.11589
 github: https://github.com/paul0noah/sm-2D3D
 youtube: https://www.youtube.com/watch?v=qr_-n8NHWC4
-pdf: https://openaccess.thecvf.com/content/CVPR2023/supplemental/Roetzer_Conjugate_Product_Graphs_CVPR_2023_supplemental.pdf
+pdf: https://openaccess.thecvf.com/content/CVPR2023/papers/Roetzer_Conjugate_Product_Graphs_for_Globally_Optimal_2D-3D_Shape_Matching_CVPR_2023_paper.pdf
 ---
 
 ## Abstract
