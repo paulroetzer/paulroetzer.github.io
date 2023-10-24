@@ -6,7 +6,7 @@ date: 2023-10-23 12:00:00 +0800
 pin: false
 math: true
 mermaid: false
-venue: ICCV 2023
+venue: 3DV 2024
 image:
   path: /assets/img/publications/revisiting.png
   alt: Qualitative 3D shape matching results of our method.
