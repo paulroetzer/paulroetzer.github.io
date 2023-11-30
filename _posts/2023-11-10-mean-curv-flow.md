@@ -13,11 +13,13 @@ mermaid: false
 
 This post contains the port of this [matlab implementation](https://www.alecjacobson.com/weblog/?tag=mean-curvature-flow) of mean curvature to python.
 
-With mean curvature flow we can map a genus 0 shape to a shpere:
-![Desktop View](/assets/img/posts/meancurvflow/meancurvflow_0.png){: width="200"}
-![Desktop View](/assets/img/posts/meancurvflow/meancurvflow_1.png){: width="200"}
-![Desktop View](/assets/img/posts/meancurvflow/meancurvflow_2.png){: width="200"}
+With mean curvature flow we can map a genus 0 shape to a sphere:
 
+![Desktop View](/assets/img/posts/meancurvflow/meancurvflow_0.png){: width="200" style="margin-left:auto; margin-right:auto"}
+
+![Desktop View](/assets/img/posts/meancurvflow/meancurvflow_1.png){: width="200" style="margin-left:auto; margin-right:auto"}
+
+![Desktop View](/assets/img/posts/meancurvflow/meancurvflow_2.png){: width="200" style="margin-left:auto; margin-right:auto"}
 
 
 ### ⚙️ Requires Python modules
@@ -40,7 +42,7 @@ import igl
 from scipy.sparse.linalg import spsolve
 def mean_curv_flow(v, f, max_iter=100, delta=10):
     debug = False # set to True for visualising intermediate steps
-    dense = False # set tp True to enable computation with dense matrices
+    dense = False # set to True to enable computation with dense matrices
     if debug:
         import vedo
         plt = vedo.Plotter(bg=[255, 255, 255])
