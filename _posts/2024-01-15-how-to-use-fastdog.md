@@ -127,7 +127,7 @@ sol_numpy = np.array(sol)
 
 ### 🤓 More Advanced
 
-Further settings of the solver can be tweaked to extract more performance and thus faster solver times for your specific problem. If you have many of the same problem instances you might want to consider [DODGE Train](https://arxiv.org/abs/2205.11638) to tweak the parameters.
+Further settings of the solver can be tweaked to extract more performance and thus faster solver times for your specific problem. If you have many of the same problem instances you might want to consider [DODGE Train](https://arxiv.org/abs/2205.11638) to tweak internal parameters through graph neural networks for even better quality solutions..
 Currently available parameters are:
 ```python
 # More general options
