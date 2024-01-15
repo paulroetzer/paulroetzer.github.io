@@ -64,7 +64,7 @@ x_1, x_2 binary
 A x <= b
 ```
 
-### Basics
+### 😎 Basics
 
 A basic example which is the simplified version of [this](https://github.com/LPMP/BDD/blob/main/test/test_bdd_solver_py.py).
 ```python
@@ -125,7 +125,7 @@ upper_bound, sol = solver.round()
 sol_numpy = np.array(sol)
 ```
 
-### More Advanced
+### 🤓 More Advanced
 
 Further settings of the solver can be tweaked to extract more performance and thus faster solver times for your specific problem. If you have many of the same problem instances you might want to consider [DODGE Train](https://arxiv.org/abs/2205.11638) to tweak the parameters.
 Currently available parameters are:
@@ -161,7 +161,7 @@ opts.cuda_split_long_bdds_length = 1000
 
 ```
 
-### More Efficient Problem Generation 
+### 😵‍💫 Efficient Problem Generation (in c++)
 In case you want to create extremly large problem instances as we did in our shape matching [paper](https://arxiv.org/abs/2310.08230) you might actually want to create your problem (i.e. the ilp instance) in c++, write python bindings for that and return an ilp object. We did that in this [repository](https://github.com/paul0noah/sm-comb) and sketch the main steps here:
 1) Create a c++ project which links to the bdd-solver repository. If you use CMAKE you would have some lines similar to this in your CMakeLists.txt file:
 ```python
@@ -245,7 +245,7 @@ PYBIND11_MODULE(your_python_bindings, handle) {
 ```python
 from your_python_bindings import YourGenerator
 
-// create ilp object
+# create ilp object
 generator = YourGenerator()
 ilp = generator.getIlpObj()
 ```
