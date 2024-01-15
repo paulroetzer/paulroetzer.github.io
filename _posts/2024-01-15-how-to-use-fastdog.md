@@ -15,7 +15,7 @@ mermaid: false
 
 In one of our recent [papers](https://arxiv.org/abs/2310.08230) we use and adapt FastDOG ([paper](https://arxiv.org/abs/2111.10270), [code](https://github.com/LPMP/BDD)) solver with which _large binary integer linear programs_ (ILPs) can be solved. Key features of the solver are:
 - computing lower bounds for ILPs
-- compute a (not necessarily the globally optimal) primal feasible solution
+- compute a primal feasible solution (not necessarily the globally optimal) 
 - CPU, multicore CPU as well as GPU support (highly parallised!)
 - faster convergence speeds for general problem classes through second order information, i.e. LBFGS updates (contribution of our [paper](https://arxiv.org/abs/2310.08230))
 
@@ -127,7 +127,7 @@ sol_numpy = np.array(sol)
 
 ### 🤓 More Advanced
 
-Further settings of the solver can be tweaked to extract more performance and thus faster solver times for your specific problem. If you have many of the same problem instances you might want to consider [DODGE Train](https://arxiv.org/abs/2205.11638) to tweak internal parameters through graph neural networks for even better quality solutions..
+Further settings of the solver can be tweaked to extract more performance and thus faster solver times for your specific problem. If you have many of the same problem instances you might want to consider [DODGE Train](https://arxiv.org/abs/2205.11638) to tweak internal parameters through graph neural networks for even better quality solutions.
 Currently available parameters are:
 ```python
 # More general options
