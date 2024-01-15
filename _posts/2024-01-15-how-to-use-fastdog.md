@@ -11,7 +11,7 @@ mermaid: false
 
 #  How to Use FastDOG - a Highly Parallelised ILP Solver
 
-![Desktop View](/assets/img/posts/fastdog/fastdog.gif){: width="899" height="730" }
+![Desktop View](/assets/img/posts/fastdog/fastdog.png){: width="899" height="730" }
 
 In one of our recent [papers](https://arxiv.org/abs/2310.08230) we use and adapt FastDOG ([paper](https://arxiv.org/abs/2111.10270), [code](https://github.com/LPMP/BDD)) solver with which _large binary integer linear programs_ (ILPs) can be solved. Key features of the solver are:
 - computing lower bounds for ILPs
