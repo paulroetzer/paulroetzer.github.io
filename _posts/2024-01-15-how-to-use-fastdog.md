@@ -23,11 +23,10 @@ In this blog post we learn how to install and use the solver through its python 
 
 ## ⚙️ Installation
 
-1) (Optional but highly recommended) Create python virtual environment and install pytorch
+1) (Optional but highly recommended) Create python virtual environment
 ```bash
 conda create -n ilp_solver python=3.8 # create new virtual environment
 conda activate ilp_solver
-conda install pytorch cudatoolkit -c pytorch # install pytorch
 ```
 
 2) Install FastDog python bindings
@@ -39,7 +38,7 @@ cd ..
 ```
 
 ### 🚧 Troubleshooting (incomplete list)
-- No CUDA available on your system: change `'-DWITH_CUDA=ON'` to `'-DWITH_CUDA=OFF'` and install via `python setup.py install` Note: you have to change the options to `opts.bdd_solver_type = bdd_solver_options.bdd_solver_types.parallel_mma`
+- No CUDA available on your system: change `'-DWITH_CUDA=ON'` to `'-DWITH_CUDA=OFF'` and install via `python setup.py install` Note: you have to change the options to `opts.bdd_solver_type = bdd_solver_options.bdd_solver_types.lbfgs_parallel_mma`
 - Unsupported gpu archtiecture `compute native`: Make sure your cmake version is larger than 3.25. Through `conda upgrade conda install -c anaconda cmake`
 - Missing `CUDA_INCLUDE_DIRS` when installing the solver: Install latest cuda toolkit AND PERFORM POST-INSTALLATION ACTIONS: `export PATH=/usr/local/cuda-12.2/bin${PATH:+:${PATH}}`
 - (Last Resort and kind of a hack) Missing `CUDA_INCLUDE_DIRS` when installing the solver: Manually set the cuda variables for cmake ie add the following lines in `BDD/setup.py`
@@ -57,7 +56,7 @@ If you find troubles installing and furthermore a fix for that feel free to cont
 
 ## 🚀 Using FastDOG 🐶
 
-Once you have successfully installed the solver into your virtual environment we can start discussing how to use the solver. Generally, the solver can solver problems of the following form
+Once you have successfully installed the solver into your virtual environment we can start discussing how to use the solver. Generally, the solver can solve problems of the following form
 ```
 min 1 * x_1 + 2 * x_2
 subject to
