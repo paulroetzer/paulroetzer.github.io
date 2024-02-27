@@ -2,7 +2,7 @@
 layout: publication
 title: Revisiting Map Relations for Unsupervised Non-Rigid Shape Matching
 authors: [dongc, me, fb]
-date: 2023-10-23 12:00:00 +0800
+date: 2024-02-27 12:00:00 +0800
 pin: false
 math: true
 mermaid: false
