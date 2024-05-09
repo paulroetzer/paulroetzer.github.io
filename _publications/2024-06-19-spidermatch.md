@@ -6,6 +6,9 @@ date: 2024-05-01 12:00:00 +0800
 pin: false
 math: true
 mermaid: false
+image:
+  path: /assets/img/publications/spidermatch.png
+  alt: Schematic illustration of our method
 venue: CVPR 2024
 github: https://github.com/paul0noah/spider-match
 ---
@@ -23,6 +26,6 @@ Will follow soon 🚧
     author     = {Paul Roetzer and Florian Bernard},
     title     = { SpiderMatch: 3D Shape Matching with Global Optimality and Geometric Consistency },
     booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year     = 2024,
+    year     = 2024
 }
 ```
