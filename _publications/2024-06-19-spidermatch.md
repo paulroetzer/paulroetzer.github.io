@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: SpiderMatch: 3D Shape Matching with Global Optimality and Geometric Consistency
+title: "SpiderMatch: 3D Shape Matching with Global Optimality and Geometric Consistency"
 authors: [me, fb]
 date: 2024-05-01 12:00:00 +0800
 pin: false
