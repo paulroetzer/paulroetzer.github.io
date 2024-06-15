@@ -11,6 +11,7 @@ image:
   alt: Schematic illustration of our method
 venue: CVPR 2024
 github: https://github.com/paul0noah/spider-match
+pdf: https://openaccess.thecvf.com/content/CVPR2024/papers/Roetzer_SpiderMatch_3D_Shape_Matching_with_Global_Optimality_and_Geometric_Consistency_CVPR_2024_paper.pdf
 ---
 
 ## Abstract
