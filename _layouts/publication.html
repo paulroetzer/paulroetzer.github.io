@@ -4,6 +4,7 @@ refactor: true
 panel_includes:
   - toc
 tail_includes:
+  - post-nav
   - comments
 ---
 <link rel="stylesheet" href="/assets/css/buttons.css">
@@ -107,7 +108,7 @@ tail_includes:
     {% endcapture %}
 
     <div class="mt-3 mb-3">
-      <img {{ src }} {{ class }} {{ alt }} style='max-width: 100%; max-height: 100%; margin: auto; display: block;' {{ lqip | strip }}>
+      <img {{ src }} {{ class }} {{ alt }} style='max-width: 100%; max-height: 100%; margin: auto; display: block;'  w="1200" {{ lqip | strip }}>
     </div>
   {% endif %}
 
