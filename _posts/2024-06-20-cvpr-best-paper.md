@@ -1,5 +1,5 @@
 ---
-title: Oral at CVPR24
+title: Best Student Paper Runner-Up at CVPR
 author: me
 date: 2024-06-20 11:33:00 +0800
 categories: [News, Publications]
