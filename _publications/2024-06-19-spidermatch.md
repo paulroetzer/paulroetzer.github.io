@@ -2,7 +2,7 @@
 layout: publication
 title: "SpiderMatch: 3D Shape Matching with Global Optimality and Geometric Consistency"
 authors: [me, fb]
-date: 2024-05-01 12:00:00 +0800
+date: 2024-06-01 12:00:00 +0800
 pin: false
 math: true
 mermaid: false
