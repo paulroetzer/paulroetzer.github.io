@@ -22,7 +22,7 @@ arxiv: https://arxiv.org/abs/2310.08230
 
 ## Bibtex
 ```bibtex
-@inproceedings{roetzer2024spidermatch,
+@inproceedings{roetzerabbas2024discomatch,
     author     = {Paul Roetzer and Ahmed Abbas and Dongliang Cao and Florian Bernard and Paul Swoboda},
     title     = { DiscoMatch: Fast Discrete Optimisation for Geometrically Consistent 3D Shape Matching },
     booktitle = {In Proceedings of the European conference on computer vision (ECCV)},
