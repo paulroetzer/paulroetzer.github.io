@@ -11,7 +11,7 @@ image:
   alt: Schematic illustration of our method
 venue: ECCV 2024
 github: https://github.com/paul0noah/disco-match
-paper: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07026.pdf
+pdf: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07026.pdf
 arxiv: https://arxiv.org/abs/2310.08230
 ---
 
