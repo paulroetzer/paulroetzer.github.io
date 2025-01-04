@@ -71,25 +71,23 @@
 
 {% if page.math %}
   <!-- MathJax -->
-  <script>
-    /* see: <https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options> */
-    MathJax = {
-      tex: {
-        /* start/end delimiter pairs for in-line math */
-        inlineMath: [
-          ['$', '$'],
-          ['\\(', '\\)']
-        ],
-        /* start/end delimiter pairs for display math */
-        displayMath: [
-          ['$$', '$$'],
-          ['\\[', '\\]']
-        ]
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      },
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
       }
-    };
+    });
   </script>
-  <script src="{{ site.data.origin[type].polyfill.js | relative_url }}"></script>
-  <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML">
+  </script>
 {% endif %}
 
 {% if jekyll.environment == 'production' %}
