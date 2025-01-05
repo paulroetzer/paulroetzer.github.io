@@ -1,5 +1,5 @@
 ---
-title: Two Papers at 3DV
+title: 📄 Two Papers at 3DV
 author: me
 date: 2023-10-01 11:33:00 +0800
 categories: [News, Publications]

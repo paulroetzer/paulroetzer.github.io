@@ -1,5 +1,5 @@
 ---
-title: One Paper at ECCV 2024
+title: 📄 One Paper at ECCV 2024
 author: me
 date: 2024-07-08 11:33:00 +0800
 categories: [News, Publications]

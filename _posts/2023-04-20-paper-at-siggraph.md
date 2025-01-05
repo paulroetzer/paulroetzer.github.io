@@ -1,5 +1,5 @@
 ---
-title: One Paper at SIGGRAPH 2023
+title: 📄 One Paper at SIGGRAPH 2023
 author: me
 date: 2023-03-01 11:33:00 +0800
 categories: [News, Publications]

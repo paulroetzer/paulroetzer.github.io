@@ -1,5 +1,5 @@
 ---
-title: Two Papers at CVPR 2024
+title: 📄 Two Papers at CVPR 2024
 author: me
 date: 2024-02-27 11:33:00 +0800
 categories: [News, Publications]

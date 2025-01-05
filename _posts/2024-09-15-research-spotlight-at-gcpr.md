@@ -1,5 +1,5 @@
 ---
-title: Research Spotlight Talk at GCPR 2024 in Munich
+title: 🗣️ Research Spotlight Talk at GCPR 2024 in Munich
 author: me
 date: 2024-09-15 11:33:00 +0800
 categories: [News, Talks]
@@ -9,7 +9,7 @@ math: false
 mermaid: false
 ---
 
-At this years GCPR in Munich I was invited with three other PhD students to give a talk about our PhD. I spoke about "Geometric Consistency in Shape Matching".
+At this years GCPR in Munich I was invited (together with three other PhD students) to give a talk about my PhD. I spoke about "Geometric Consistency in Shape Matching".
 
 ![Desktop View](/assets/img/posts/research-spotlight.jpg){: width="500" style="margin-left:auto; margin-right:auto"}
 

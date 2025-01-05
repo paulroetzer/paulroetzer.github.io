@@ -1,5 +1,5 @@
 ---
-title: Two Papers at GCPR 2023 Nectar Track
+title: 📄 Two Papers at GCPR 2023 Nectar Track
 author: me
 date: 2023-09-01 11:33:00 +0800
 categories: [News, Publications]
