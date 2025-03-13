@@ -20,9 +20,9 @@ venue: CVPR 2025
 ## Bibtex
 ```bibtex
 @inproceedings{roetzer2025higherorder,
-    author     = {Paul Roetzer and Viktoria Ehm and Daniel Cremers and and Zorah L\"ahner and Florian Bernard},
+    author    = {Paul Roetzer and Viktoria Ehm and Daniel Cremers and and Zorah L\"ahner and Florian Bernard},
     title     = {Higher-Order Ratio Cycles for Fast and Globally Optimal Shape Matching},
     booktitle = {CVPR},
-    year     = 2025
+    year      = 2025
 }
 ```

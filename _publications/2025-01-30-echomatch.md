@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "EchoMatch: Partial-to-Partial Shape Matching via Correspondence Reflection"
-authors: [yx, ve, me, mg, ne, fb, dc]
+authors: [yx, ve, me, maolin, ne, fb, dc]
 date: 2025-01-30 12:00:00 +0800
 pin: false
 math: true
@@ -21,8 +21,8 @@ venue: CVPR 2025
 ```bibtex
 @inproceedings{xie2025echomatch,
     author     = {Yizheng Xie and Viktoria Ehm and Paul Roetzer and Nafie El Amrani and Maolin Gaoa and Florian Bernard and Daniel Cremers},
-    title     = {EchoMatch: Partial-to-Partial Shape Matching via Correspondence Reflection},
-    booktitle = {CVPR},
-    year     = 2025
+    title      = {EchoMatch: Partial-to-Partial Shape Matching via Correspondence Reflection},
+    booktitle  = {CVPR},
+    year       = 2025
 }
 ```
