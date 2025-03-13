@@ -9,7 +9,7 @@ fb:
 zl:
   name: Zorah Lähner
   url: https://zorah.github.io/
-  affiliation: University of Siegen
+  affiliation: University of Bonn
 dongc:
   name: Dongliang Cao
   url: https://dongliangcao.github.io/
@@ -50,3 +50,15 @@ ve:
   name: Viktoria Ehm
   url: https://cvg.cit.tum.de/members/ehm
   affiliation: TUM
+yx:
+  name: Yizheng Xie
+  url: https://xieyizheng.com/
+  affiliation: TUM
+ne:
+  name: Nafie El Amrani
+  url: https://nafieamrani.github.io/
+  affiliation: University of Bonn
+cp:
+  name: Christoph Petzsch
+  url: https://github.com/christophpetzsch/
+  affiliation: University of Bonn
