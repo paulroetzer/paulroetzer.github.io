@@ -11,6 +11,7 @@ image:
   path: /assets/img/publications/revisiting.png
   alt: Qualitative 3D shape matching results of our method.
 arxiv: https://arxiv.org/pdf/2310.11420.pdf
+pdf: https://dongliangcao.github.io/assets/pdf/dongliang20243dv.pdf
 ---
 
 ## Abstract

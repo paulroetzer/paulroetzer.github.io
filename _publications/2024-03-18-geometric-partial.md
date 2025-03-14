@@ -11,6 +11,8 @@ image:
   path: /assets/img/publications/partialwindheuser.png
   alt: We find geometrically consistent matchings between a template shape (middle) and partial shapes.
 arxiv: https://arxiv.org/pdf/2309.05013.pdf
+github: https://github.com/vikiehm/geometrically-consistent-partial-shape-matching
+pdf: https://ieeexplore.ieee.org/document/10550823
 ---
 
 ## Abstract
