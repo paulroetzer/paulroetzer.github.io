@@ -9,7 +9,7 @@ mermaid: false
 image:
   path: /assets/img/publications/predictionprob.jpg
   alt: Illustration of Different Prediction Problems
-venue: Arxiv 2022
+venue: Arxiv
 arxiv: https://arxiv.org/abs/2202.03574
 ---
 
