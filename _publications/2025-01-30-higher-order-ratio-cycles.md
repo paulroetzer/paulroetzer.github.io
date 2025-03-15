@@ -10,6 +10,7 @@ image:
   path: /assets/img/publications/ratiocycles.png
   alt: Schematic illustration of our method
 venue: CVPR 2025
+github: https://github.com/paul0noah/product-graph-cycles/
 ---
 
 ## Abstract
