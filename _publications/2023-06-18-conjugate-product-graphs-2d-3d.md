@@ -24,6 +24,11 @@ pdf: https://openaccess.thecvf.com/content/CVPR2023/papers/Roetzer_Conjugate_Pro
 
 {% include embed/youtube.html id='qr_-n8NHWC4' %}
 
+## Poster
+ <object data="/assets/pdf/posters/conjugate2d3d.pdf#toolbar=0&navpanes=0&pagemode=none" type="application/pdf"
+ type="application/pdf" style="min-height:40vh;width:100%">
+<p>Unable to display PDF file. <a href="/assets/pdf/posters/conjugate2d3d.pdf">Download</a> instead.</p>
+</object>
 
 
 ## Bibtex

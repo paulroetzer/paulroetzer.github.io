@@ -22,6 +22,13 @@ pdf: https://openaccess.thecvf.com/content/CVPR2024/papers/Roetzer_SpiderMatch_3
 ## Video
 {% include embed/youtube.html id='iEceCKHDbY4' %}
 
+## Poster
+ <object data="/assets/pdf/posters/spidermatch.pdf#toolbar=0&navpanes=0&pagemode=none" type="application/pdf"
+ type="application/pdf" style="min-height:40vh;width:100%">
+<p>Unable to display PDF file. <a href="/assets/pdf/posters/spidermatch.pdf">Download</a> instead.</p>
+</object>
+
+
 ## Bibtex
 ```bibtex
 @inproceedings{roetzer2024spidermatch,
