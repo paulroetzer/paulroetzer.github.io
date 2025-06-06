@@ -21,7 +21,7 @@ github: https://github.com/NafieAmrani/SuPa-Match
 ## Bibtex
 ```bibtex
 @inproceedings{amrani2025highres,
-    author    = {Nafie El Amrani and Paul Roetzer and Nafie and Florian Bernard},
+    author    = {Nafie El Amrani and Paul Roetzer and Florian Bernard},
     title     = {High-Resolution 3D Shape Matching with Global Optimality and Geometric Consistency},
     booktitle = {SGP},
     year      = 2025
