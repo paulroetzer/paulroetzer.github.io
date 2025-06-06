@@ -9,6 +9,7 @@ mermaid: false
 image:
   path: /assets/img/publications/echomatch.png
   alt: Schematic illustration of our method
+pdf: https://openaccess.thecvf.com/content/CVPR2025/papers/Xie_EchoMatch_Partial-to-Partial_Shape_Matching_via_Correspondence_Reflection_CVPR_2025_paper.pdf
 venue: CVPR 2025
 ---
 
