@@ -1,5 +1,5 @@
 ---
-title: 📝 One paper at SGP 2025.
+title: 📄 One paper at SGP 2025.
 author: me
 date: 2025-06-05 11:33:00 +0800
 categories: [News, Publications]
