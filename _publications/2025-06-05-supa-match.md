@@ -9,7 +9,7 @@ mermaid: false
 image:
   path: /assets/img/publications/highres.png
   alt: Schematic illustration of our method
-venue: SGP 2025
+venue: SGP 2025 (CGF)
 github: https://github.com/NafieAmrani/SuPa-Match
 ---
 
