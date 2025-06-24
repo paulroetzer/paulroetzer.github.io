@@ -2,7 +2,7 @@
 layout: publication
 title: "High-Resolution 3D Shape Matching with Global Optimality and Geometric Consistency"
 authors: [ne, me, fb]
-date: 2025-06-05 12:00:00 +0800
+date: 2025-06-23 12:00:00 +0800
 pin: false
 math: true
 mermaid: false

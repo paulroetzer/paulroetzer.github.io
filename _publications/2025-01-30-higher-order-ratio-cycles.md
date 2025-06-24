@@ -2,7 +2,7 @@
 layout: publication
 title: "Higher-Order Ratio Cycles for Fast and Globally Optimal Shape Matching"
 authors: [me, ve, dc, zl, fb]
-date: 2025-01-30 12:00:00 +0800
+date: 2025-06-10 12:00:00 +0800
 pin: false
 math: true
 mermaid: false

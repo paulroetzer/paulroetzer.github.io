@@ -2,7 +2,7 @@
 layout: publication
 title: "EchoMatch: Partial-to-Partial Shape Matching via Correspondence Reflection"
 authors: [yx, ve, me, maolin, ne, fb, dc]
-date: 2025-01-30 12:00:00 +0800
+date: 2025-06-10 12:00:00 +0800
 pin: false
 math: true
 mermaid: false
