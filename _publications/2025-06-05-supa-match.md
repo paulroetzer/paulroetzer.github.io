@@ -11,6 +11,7 @@ image:
   alt: Schematic illustration of our method
 venue: SGP 2025 (CGF)
 github: https://github.com/NafieAmrani/SuPa-Match
+pdf: https://diglib.eg.org/server/api/core/bitstreams/53ea5b15-5cee-48dc-ae2f-6ee8d803f4b3/content
 ---
 
 ## Abstract
