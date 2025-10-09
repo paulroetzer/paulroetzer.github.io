@@ -12,6 +12,7 @@ image:
 venue: CVPR 2025
 github: https://github.com/paul0noah/product-graph-cycles/
 pdf: https://openaccess.thecvf.com/content/CVPR2025/papers/Roetzer_Higher-Order_Ratio_Cycles_for_Fast_and_Globally_Optimal_Shape_Matching_CVPR_2025_paper.pdf
+supp: https://openaccess.thecvf.com/content/CVPR2025/supplemental/Roetzer_Higher-Order_Ratio_Cycles_CVPR_2025_supplemental.pdf
 ---
 
 ## Abstract

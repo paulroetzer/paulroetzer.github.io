@@ -44,6 +44,17 @@ tail_includes:
         </a>
       </span>
     {% endif %}
+    {% if page.supp %}
+      <span class="link-block">
+        <a href="{{page.supp}}"
+          class="button">
+          <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+          </span>
+          <span>Supplemental</span>
+        </a>
+      </span>
+    {% endif %}
     {% if page.arxiv %}
       <span class="link-block">
         <a href="{{page.arxiv}}"

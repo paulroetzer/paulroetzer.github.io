@@ -14,6 +14,7 @@ arxiv: https://arxiv.org/abs/2204.12805
 github: https://github.com/paul0noah/sm-comb
 youtube: https://youtu.be/uPwqOXYw1kw
 pdf: https://openaccess.thecvf.com/content/CVPR2022/papers/Roetzer_A_Scalable_Combinatorial_Solver_for_Elastic_Geometrically_Consistent_3D_Shape_CVPR_2022_paper.pdf
+supp: https://openaccess.thecvf.com/content/CVPR2022/supplemental/Roetzer_A_Scalable_Combinatorial_CVPR_2022_supplemental.pdf
 ---
 
 ## Abstract
