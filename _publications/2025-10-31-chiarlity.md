@@ -7,7 +7,7 @@ pin: false
 math: true
 mermaid: false
 image:
-  path: /assets/img/publications/geco.png
+  path: /assets/img/publications/chirality.png
   alt: Schematic illustration of our method
 venue: 3DV 2026
 ---
