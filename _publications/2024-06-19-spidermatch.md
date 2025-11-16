@@ -14,6 +14,7 @@ github: https://github.com/paul0noah/spider-match
 youtube: https://www.youtube.com/watch?v=iEceCKHDbY4
 pdf: https://openaccess.thecvf.com/content/CVPR2024/papers/Roetzer_SpiderMatch_3D_Shape_Matching_with_Global_Optimality_and_Geometric_Consistency_CVPR_2024_paper.pdf
 supp: https://openaccess.thecvf.com/content/CVPR2024/supplemental/Roetzer_SpiderMatch_3D_Shape_CVPR_2024_supplemental.pdf
+poster: /assets/pdf/posters/spidermatch.pdf
 ---
 
 ## Abstract
@@ -22,12 +23,6 @@ supp: https://openaccess.thecvf.com/content/CVPR2024/supplemental/Roetzer_Spider
 
 ## Video
 {% include embed/youtube.html id='iEceCKHDbY4' %}
-
-## Poster
- <object data="/assets/pdf/posters/spidermatch.pdf#toolbar=0&navpanes=0&pagemode=none" type="application/pdf"
- type="application/pdf" style="min-height:40vh;width:100%">
-<p>Unable to display PDF file. <a href="/assets/pdf/posters/spidermatch.pdf">Download</a> instead.</p>
-</object>
 
 
 ## Bibtex

@@ -12,6 +12,7 @@ image:
 pdf: https://openaccess.thecvf.com/content/CVPR2025/papers/Xie_EchoMatch_Partial-to-Partial_Shape_Matching_via_Correspondence_Reflection_CVPR_2025_paper.pdf
 supp: https://openaccess.thecvf.com/content/CVPR2025/supplemental/Xie_EchoMatch_Partial-to-Partial_Shape_CVPR_2025_supplemental.pdf
 github: https://github.com/vikiehm/echo-match
+poster: /assets/pdf/posters/echomatch.pdf
 venue: CVPR 2025
 ---
 

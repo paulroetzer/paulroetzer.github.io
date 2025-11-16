@@ -6,7 +6,7 @@ order: 1
 
 ![Desktop View](/assets/img/avatar.jpeg){: width="512" height="512" .w-50 .left}
 
-I am a third year PhD Student supervised by <a href="https://lovc.cs.uni-bonn.de/index.php/team/florian-bernard/">Professor Florian Bernard</a> at the University of Bonn. I work with graphs (and graph algorithms), on correspondence problems, and on optimisation methods, all focused on problems in 3D space.
+I am a fourth year PhD Student supervised by <a href="https://lovc.cs.uni-bonn.de/index.php/team/florian-bernard/">Professor Florian Bernard</a> at the University of Bonn. I work with graphs (and graph algorithms), on correspondence problems, and on optimisation methods, all focused on problems in 3D space.
 
 Previously, I received my Master's degree in Robotics, Cognition, Intelligence as well as my Bachelor's degree in Mechanical Engineering at Technical University of Munich (TUM).
 

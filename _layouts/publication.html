@@ -127,7 +127,19 @@ tail_includes:
 
 <div class="post-content">
   {{ content }}
+
+  {% if page.poster %}
+    <h2 id="poster"><span class="me-2">Poster</span><a href="#poster" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    {% capture src %}src="{{ page.poster }}"{% endcapture %}
+
+    <object data="{{page.poster}}#toolbar=0&navpanes=0&pagemode=none" type="application/pdf"
+    type="application/pdf" style="min-height:40vh;width:100%">
+    <p>Unable to display PDF file. <a href="/assets/pdf/posters/approx2d3d.pdf">Download</a> instead.</p>
+    </object>
+
+  {% endif %}
 </div>
+
 
 <div class="post-tail-wrapper text-muted">
 

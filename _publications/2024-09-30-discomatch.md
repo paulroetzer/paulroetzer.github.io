@@ -14,18 +14,13 @@ github: https://github.com/paul0noah/disco-match
 pdf: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07026.pdf
 arxiv: https://arxiv.org/abs/2310.08230
 supp: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07026-supp.pdf
+poser: /assets/pdf/posters/discomatch.pdf
 ---
 
 ## Abstract
 
 > In this work we propose to combine the advantages of learning-based and combinatorial formalisms for 3D shape matching. While learning-based methods lead to state-of-the-art matching performance, they do not ensure geometric consistency, so that obtained matchings are locally non-smooth. On the contrary, axiomatic, optimisation-based methods allow to take geometric consistency into account by explicitly constraining the space of valid matchings. However, existing axiomatic formalisms do not scale to practically relevant problem sizes, and require user input for the initialisation of non-convex optimisation problems. We work towards closing this gap by proposing a novel combinatorial solver that combines a unique set of favourable properties: our approach (i) is initialisation free, (ii) is massively parallelisable and powered by a quasi-Newton method, (iii) provides optimality gaps, and (iv) delivers improved match- ing quality with decreased runtime and globally optimal results for many instances.
 
-
-## Poster
- <object data="/assets/pdf/posters/discomatch.pdf#toolbar=0&navpanes=0&pagemode=none" type="application/pdf"
- type="application/pdf" style="min-height:40vh;width:100%">
-<p>Unable to display PDF file. <a href="/assets/pdf/posters/discomatch.pdf">Download</a> instead.</p>
-</object>
 
 ## Bibtex
 ```bibtex

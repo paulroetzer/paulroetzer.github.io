@@ -15,6 +15,7 @@ github: https://github.com/paul0noah/sm-2D3D
 youtube: https://www.youtube.com/watch?v=qr_-n8NHWC4
 pdf: https://openaccess.thecvf.com/content/CVPR2023/papers/Roetzer_Conjugate_Product_Graphs_for_Globally_Optimal_2D-3D_Shape_Matching_CVPR_2023_paper.pdf
 supp: https://openaccess.thecvf.com/content/CVPR2023/supplemental/Roetzer_Conjugate_Product_Graphs_CVPR_2023_supplemental.pdf
+poster: /assets/pdf/posters/conjugate2d3d.pdf
 ---
 
 ## Abstract
@@ -24,12 +25,6 @@ supp: https://openaccess.thecvf.com/content/CVPR2023/supplemental/Roetzer_Conjug
 ## Video
 
 {% include embed/youtube.html id='qr_-n8NHWC4' %}
-
-## Poster
- <object data="/assets/pdf/posters/conjugate2d3d.pdf#toolbar=0&navpanes=0&pagemode=none" type="application/pdf"
- type="application/pdf" style="min-height:40vh;width:100%">
-<p>Unable to display PDF file. <a href="/assets/pdf/posters/conjugate2d3d.pdf">Download</a> instead.</p>
-</object>
 
 
 ## Bibtex
