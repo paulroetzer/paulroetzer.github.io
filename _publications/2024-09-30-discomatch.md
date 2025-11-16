@@ -14,7 +14,7 @@ github: https://github.com/paul0noah/disco-match
 pdf: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07026.pdf
 arxiv: https://arxiv.org/abs/2310.08230
 supp: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07026-supp.pdf
-poser: /assets/pdf/posters/discomatch.pdf
+poster: /assets/pdf/posters/discomatch.pdf
 ---
 
 ## Abstract
