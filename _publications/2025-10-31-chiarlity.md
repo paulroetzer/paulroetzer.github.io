@@ -2,7 +2,7 @@
 layout: publication
 title: "Symmetry Informative and Agnostic Feature Disentanglement for 3D Shapes"
 authors: [tw, ww, me, ne, fb]
-date: 2025-10-30 12:00:00 +0800
+date: 2026-02-01 12:00:00 +0800
 pin: false
 math: true
 mermaid: false
@@ -10,6 +10,10 @@ image:
   path: /assets/img/publications/chirality.png
   alt: Schematic illustration of our method
 venue: 3DV 2026
+arxiv: https://arxiv.org/abs/2601.14804
+pdf: https://openreview.net/pdf/7bd01f470fecc0a624bfc529a6ed6c317252aae6.pdf
+supp: https://openreview.net/attachment?id=AFkKZf7HBo&name=supplementary_material
+code: https://github.com/TWeissberg/chirality
 ---
 
 ## Abstract
