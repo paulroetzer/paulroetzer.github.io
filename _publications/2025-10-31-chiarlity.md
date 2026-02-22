@@ -13,7 +13,7 @@ venue: 3DV 2026
 arxiv: https://arxiv.org/abs/2601.14804
 pdf: https://openreview.net/pdf/7bd01f470fecc0a624bfc529a6ed6c317252aae6.pdf
 supp: https://openreview.net/attachment?id=AFkKZf7HBo&name=supplementary_material
-code: https://github.com/TWeissberg/chirality
+github: https://github.com/TWeissberg/chirality
 ---
 
 ## Abstract
