@@ -1,5 +1,5 @@
 ---
-title: 📄 One papers at CVPR conference in Denver
+title: 📄 One paper at CVPR conference in Denver
 author: me
 date: 2026-02-20 11:33:00 +0800
 categories: [News, Publications]
