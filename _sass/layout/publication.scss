@@ -10,7 +10,7 @@
   }
 }
 
-%btn-post-nav {
+%btn-publication-nav {
   width: 50%;
   position: relative;
   border-color: var(--btn-border-color);
@@ -46,7 +46,7 @@
   }
 }
 
-h1 + .post-meta {
+h1 + .publication-meta {
   span + span::before {
     @include dot;
   }
@@ -60,12 +60,12 @@ h1 + .post-meta {
   }
 }
 
-.post-tail-wrapper {
+.publication-tail-wrapper {
   margin-top: 6rem;
   border-bottom: 1px double var(--main-border-color);
   font-size: 0.85rem;
 
-  .post-tail-bottom a {
+  .publication-tail-bottom a {
     color: inherit;
   }
 
@@ -85,7 +85,7 @@ h1 + .post-meta {
     }
   } /* .license-wrapper */
 
-  .post-meta a:not(:hover) {
+  .publication-meta a:not(:hover) {
     @extend %link-underline;
   }
 
@@ -153,10 +153,10 @@ h1 + .post-meta {
   } /* .share-wrapper */
 }
 
-.post-tags {
+.publication-tags {
   line-height: 2rem;
 
-  .post-tag {
+  .publication-tag {
     background: var(--tag-bg);
 
     &:hover {
@@ -167,12 +167,12 @@ h1 + .post-meta {
   }
 }
 
-.post-navigation {
+.publication-navigation {
   padding-top: 3rem;
   padding-bottom: 4rem;
 
   .btn {
-    @extend %btn-post-nav;
+    @extend %btn-publication-nav;
 
     &:not(:hover) {
       color: var(--link-color);
@@ -185,7 +185,7 @@ h1 + .post-meta {
     }
 
     &.disabled {
-      @extend %btn-post-nav;
+      @extend %btn-publication-nav;
 
       pointer-events: auto;
       cursor: not-allowed;
@@ -221,10 +221,10 @@ h1 + .post-meta {
     margin-top: 0.3rem;
     white-space: normal;
   }
-} /* .post-navigation */
+} /* .publication-navigation */
 
 @media (hover: hover) {
-  .post-navigation {
+  .publication-navigation {
     .btn,
     .btn::before {
       transition: all 0.35s ease-in-out;
@@ -324,9 +324,9 @@ h1 + .post-meta {
   }
 }
 
-/* --- Related Posts --- */
+/* --- Related publications --- */
 
-#related-posts {
+#related-publications {
   > h3 {
     @include label(1.1rem, 600);
   }
@@ -334,7 +334,7 @@ h1 + .post-meta {
   em {
     @extend %normal-font-style;
 
-    color: var(--relate-post-date);
+    color: var(--relate-publication-date);
   }
 
   p {
@@ -385,7 +385,7 @@ h1 + .post-meta {
     margin-top: 2.2rem;
   }
 
-  .post-tail-bottom {
+  .publication-tail-bottom {
     flex-wrap: wrap-reverse !important;
 
     > div:first-child {
@@ -396,14 +396,14 @@ h1 + .post-meta {
 }
 
 @media all and (max-width: 768px) {
-  .post-content > p > img {
+  .publication-content > p > img {
     max-width: calc(100% + 1rem);
   }
 }
 
 /* Hide SideBar and TOC */
 @media all and (max-width: 849px) {
-  .post-navigation {
+  .publication-navigation {
     padding-left: 0;
     padding-right: 0;
     margin-left: -0.5rem;
