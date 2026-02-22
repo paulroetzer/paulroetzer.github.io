@@ -9,5 +9,5 @@ math: false
 mermaid: false
 ---
 
-Our ⭐️ STAR (state of the art) report "Non-Rigid 3D Shape Correspondences: From Foundations to Open Challenges and Opportunities" was accepted to Eurographics conference in Aachen!
+Our ⭐️ STAR (state-of-the-art) report "Non-Rigid 3D Shape Correspondences: From Foundations to Open Challenges and Opportunities" was accepted to Eurographics conference in Aachen!
 
