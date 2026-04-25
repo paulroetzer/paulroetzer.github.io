@@ -70,3 +70,39 @@ tw:
   name: Tobias Weißberg
   url: https://www.weissberg.io/
   affiliation: University of Bonn
+az:
+  name: Alexsei Zhuravlev
+  url: https://alekseizhuravlev.github.io/
+  affiliation: MPI
+lb:
+  name: Lennart Bastian
+  url: https://bastianlb.github.io/
+  affiliation: Imperial Collega London
+rm:
+  name: Riccardo Marin
+  url: https://www.professoren.tum.de/marin-riccardo
+  affiliation: TUM
+hn:
+  name: Riccardo Marin
+  url: https://sites.google.com/view/hiroki-nishizawa/
+  affiliation: Waseda University
+sm:
+  name: Shigeo Morishima
+  url: https://morishima-lab.jp/members?lang=en
+  affiliation: Waseda University
+ct:
+  name: Christian Theobalt
+  url: https://morishima-lab.jp/members?lang=en
+  affiliation: MPI
+nn:
+  name: Nassir Navab
+  url: https://www.professoren.tum.de/navab-nassir
+  affiliation: TUM
+vg:
+  name: Vladislav Golyanik
+  url: https://people.mpi-inf.mpg.de/~golyanik/
+  affiliation: MPI
+jt:
+  name: Johan Thunberg
+  url: https://portal.research.lu.se/en/persons/johan-thunberg/
+  affiliation: Lund University
