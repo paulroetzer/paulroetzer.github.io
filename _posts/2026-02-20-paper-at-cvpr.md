@@ -11,4 +11,4 @@ mermaid: false
 
 Our paper "Fast Markov Random Field Optimisation for Topologically Noisy 3D Shape Matching" got accepted to the 2026 CVPR conference in Denver!
 
-<meta http-equiv="refresh" content="0; URL=https://paulroetzer.github.io/publications/2025-06-26-geco.html" />
+<meta http-equiv="refresh" content="0; URL=https://paulroetzer.github.io/publications/2026-04-10-mrf.html" />
