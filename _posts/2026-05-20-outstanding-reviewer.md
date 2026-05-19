@@ -9,8 +9,6 @@ math: false
 mermaid: false
 ---
 
-I was among the top 5 percent of the 17,491 reviewers at CVPR.
+I was among the top 5 percent of the 17,491 reviewers at CVPR 2026.
 
-<meta http-equiv="refresh" content="0; URL="https://x.com/CVPR/status/2056432742208876945" />
-
-
+<meta http-equiv="refresh" content="0; URL=https://x.com/CVPR/status/2056432742208876945" />
