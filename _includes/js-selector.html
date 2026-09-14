@@ -90,6 +90,142 @@
   </script>
 {% endif %}
 
+<style>
+  :root {
+    --main-bg: transparent !important;
+    --sidebar-bg: transparent !important;
+    --topbar-bg: transparent !important;
+  }
+  html, body, #main-wrapper, #sidebar, #topbar-wrapper, footer {
+    background: transparent !important;
+  }
+  .card, .list-group-item {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(3px);
+  }
+  #archives ul li:nth-child(odd) {
+    background: transparent !important;
+  }
+</style>
+<canvas id="vanta-bg" style="position:fixed;top:0;left:0;width:100vw;height:calc(100vh + 200px);z-index:-1;opacity:0.35;will-change:transform;"></canvas>
+<script>
+  window.addEventListener('load', function () {
+    var canvas = document.getElementById('vanta-bg');
+    var ctx = canvas.getContext('2d');
+    var COLOR = '#8892a0';
+    var OVERSCAN = 200;
+    var CELL = 120;
+    var MAXD = CELL * 1.7;
+    var DRIFT = 7;
+    var DRIFT_SPEED = 0.0006;
+    var SPAWN_MS = 2500;
+    var MAX_EXTRA = 12;
+    var pts = [], extra = [], w = 0, h = 0, dpr = 1;
+
+    function seedPoints() {
+      pts = [];
+      for (var y = 0; y < h + CELL; y += CELL) {
+        for (var x = 0; x < w + CELL; x += CELL) {
+          pts.push(makePoint(x + (Math.random() - 0.5) * CELL, y + (Math.random() - 0.5) * CELL));
+        }
+      }
+    }
+    function makePoint(x, y) {
+      var z = Math.random();
+      return {
+        ox: x, oy: y, z: z,
+        ph: Math.random() * Math.PI * 2,
+        sp: 0.6 + Math.random() * 0.8,
+        r: 1 + z * 3
+      };
+    }
+
+    function draw(t) {
+      ctx.clearRect(0, 0, w, h);
+      for (var i = 0; i < pts.length; i++) {
+        var p = pts[i];
+        var amp = DRIFT * (0.4 + p.z);
+        p.x = p.ox + Math.sin(t * DRIFT_SPEED * p.sp + p.ph) * amp;
+        p.y = p.oy + Math.cos(t * DRIFT_SPEED * p.sp + p.ph) * amp
+                   + current * (0.5 + p.z * 0.5);
+      }
+      ctx.strokeStyle = COLOR;
+      ctx.globalAlpha = 0.5;
+      ctx.lineWidth = 1;
+      for (var a = 0; a < pts.length; a++) {
+        for (var b = a + 1; b < pts.length; b++) {
+          var dx = pts[a].x - pts[b].x, dy = pts[a].y - pts[b].y;
+          if (dx * dx + dy * dy < MAXD * MAXD) {
+            ctx.beginPath();
+            ctx.moveTo(pts[a].x, pts[a].y);
+            ctx.lineTo(pts[b].x, pts[b].y);
+            ctx.stroke();
+          }
+        }
+      }
+      for (var k = 0; k < pts.length; k++) {
+        var q = pts[k];
+        ctx.globalAlpha = 0.55 + q.z * 0.45;
+        var g = ctx.createRadialGradient(
+          q.x - q.r * 0.35, q.y - q.r * 0.35, q.r * 0.1,
+          q.x, q.y, q.r
+        );
+        g.addColorStop(0, '#d3d8e0');
+        g.addColorStop(1, COLOR);
+        ctx.fillStyle = g;
+        ctx.beginPath();
+        ctx.arc(q.x, q.y, q.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    function resize() {
+      dpr = window.devicePixelRatio || 1;
+      w = window.innerWidth;
+      h = window.innerHeight + OVERSCAN;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      seedPoints();
+      extra = [];
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    document.addEventListener('click', function (e) {
+      var p = makePoint(e.clientX, 0);
+      p.oy = e.clientY - current * (0.5 + p.z * 0.5);
+      addExtra(p);
+    });
+
+    function addExtra(p) {
+      extra.push(p);
+      pts.push(p);
+      if (extra.length > MAX_EXTRA) {
+        var old = extra.shift();
+        pts.splice(pts.indexOf(old), 1);
+      }
+    }
+    setInterval(function () {
+      addExtra(makePoint(Math.random() * w, Math.random() * h));
+    }, SPAWN_MS);
+
+    var target = 0, current = 0;
+    function maxScroll() {
+      return Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    }
+    function onScroll() { target = -(window.scrollY / maxScroll()) * OVERSCAN; }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    (function raf(t) {
+      current += (target - current) * 0.06;
+      draw(t || 0);
+      requestAnimationFrame(raf);
+    })();
+  });
+</script>
+
 {% if jekyll.environment == 'production' %}
   <!-- PWA -->
   {% if site.pwa.enabled %}

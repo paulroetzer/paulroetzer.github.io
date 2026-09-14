@@ -3,38 +3,98 @@ layout: page
 # The Archives of Publications.
 ---
 <link rel="stylesheet" href="/assets/css/venue.css">
+<style>
+  #pub-list { max-width: 60rem; }
+  #pub-list .year {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    opacity: 0.85;
+  }
+  #pub-list .year:first-child { margin-top: 0.5rem; }
+
+  .pub-card {
+    display: flex;
+    gap: 1.1rem;
+    align-items: flex-start;
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.9rem;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .pub-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  }
+
+  .pub-thumb {
+    flex: none;
+    width: 200px;
+    height: 112px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+
+  .pub-info { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
+  .pub-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .pub-authors { font-size: 0.85rem; line-height: 1.4; opacity: 0.85; }
+  .pub-authors .me { font-weight: 700; opacity: 1; }
+  .pub-venue-line {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 0.1rem;
+  }
+  .pub-venue-line .venue { float: none; font-size: 90%; padding: 0.3em 0.7em 0.35em; }
+
+  @media (max-width: 576px) {
+    .pub-card { flex-direction: column; }
+    .pub-thumb { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+  }
+</style>
 
 {% include lang.html %}
 
-{% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
-{% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
-
-<div id="archives" class="pl-xl-3">
+<div id="pub-list">
 
 {% assign publications = site.publications | sort: "date" | reverse %}
 {% for post in publications %}
   {% capture cur_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 
   {% if cur_year != last_year %}
-    {% unless forloop.first %}</ul>{% endunless %}
-    <div class="year lead">{{ cur_year }}</div>
-    <ul class="list-unstyled">
+    <div class="year">{{ cur_year }}</div>
     {% assign last_year = cur_year %}
   {% endif %}
 
-  <li>
-  {% assign ts = post.date | date: '%s' %}
-    <span class="date day" data-ts="{{ ts }}" data-df="DD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
-      {{ post.date | date: df_strftime_m }}
-    </span>
-    <span style="display:inline;">
-      <span class="venue" style="display:inline;">{{ post.venue}}</span>
-      <span style="display:inline; overflow: auto;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
-    </span>
-  </li>
-
-  {% if forloop.last %}</ul>{% endif %}
+  <a class="pub-card" href="{{ post.url | relative_url }}">
+    {% if post.image %}
+      {% assign pub_img = post.image.path | default: post.image %}
+      <img class="pub-thumb" src="{{ pub_img | relative_url }}" alt="{{ post.image.alt | default: post.title }}">
+    {% endif %}
+    <div class="pub-info">
+      <span class="pub-title">{{ post.title }}</span>
+      {% if post.authors %}
+        <span class="pub-authors">
+          {% for author in post.authors -%}
+            {%- assign a = site.data.authors[author] -%}
+            <span class="{% if author == 'me' %}me{% endif %}">{{ a.name | default: author }}</span>{%- unless forloop.last -%}, {% endunless -%}
+          {%- endfor %}
+        </span>
+      {% endif %}
+      <span class="pub-venue-line">
+        <span class="venue">{{ post.venue }}</span>
+      </span>
+    </div>
+  </a>
 
 {% endfor %}
 
