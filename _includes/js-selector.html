@@ -96,18 +96,192 @@
     --sidebar-bg: transparent !important;
     --topbar-bg: transparent !important;
   }
-  html, body, #main-wrapper, #sidebar, #topbar-wrapper, footer {
+  body, #main-wrapper, #sidebar, #topbar-wrapper, footer {
     background: transparent !important;
   }
+
+  html { background-color: #333533; }
+  html[data-mode=light] { background-color: #ececec; }
+  html[data-mode=dark] { background-color: #333533; }
+
   .card, .list-group-item {
-    background: rgba(255, 255, 255, 0.2) !important;
+    background: rgba(0, 0, 0, 0.28) !important;
     backdrop-filter: blur(3px);
   }
+  html[data-mode=light] .card,
+  html[data-mode=light] .list-group-item {
+    background: rgba(255, 255, 255, 0.4) !important;
+  }
+
   #archives ul li:nth-child(odd) {
     background: transparent !important;
   }
+
+  html:not([data-mode=light]) #sidebar .site-title a { color: #ffffff; }
+  html:not([data-mode=light]) #sidebar .site-subtitle { color: rgba(255, 255, 255, 0.72); }
+  html:not([data-mode=light]) #sidebar .nav-link,
+  html:not([data-mode=light]) #sidebar .sidebar-bottom a,
+  html:not([data-mode=light]) #sidebar .sidebar-bottom .mode-toggle {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  html:not([data-mode=light]) #sidebar .nav-link.active,
+  html:not([data-mode=light]) #sidebar .nav-item.active .nav-link {
+    color: #ffffff;
+  }
+
+  #sidebar .sidebar-bottom .mode-toggle,
+  #sidebar .sidebar-bottom .mode-toggle + .icon-border {
+    display: none !important;
+  }
 </style>
 <canvas id="vanta-bg" style="position:fixed;top:0;left:0;width:100vw;height:calc(100vh + 200px);z-index:-1;opacity:0.35;will-change:transform;"></canvas>
+
+<style>
+  .switch {
+    --hue: 223;
+    --trans-dur: 0.4s;
+    --trans-timing: cubic-bezier(0.65,0,0.35,1);
+    position: fixed;
+    top: 0.9rem;
+    right: 1rem;
+    z-index: 1000;
+    font-size: 15px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .switch__input { position: relative; -webkit-tap-highlight-color: transparent; }
+  .switch__input,
+  .switch__input:before { background-color: hsl(var(--hue),10%,10%); }
+  .switch__input {
+    border-radius: 0.75em;
+    cursor: pointer;
+    display: block;
+    width: 3em;
+    height: 1.5em;
+    transition: background-color var(--trans-dur) var(--trans-timing);
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .switch__input:before {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.125em;
+    left: 0.125em;
+    width: 1.25em;
+    height: 1.25em;
+    transition:
+      background-color var(--trans-dur) var(--trans-timing),
+      transform var(--trans-dur) var(--trans-timing);
+  }
+  .switch__icon,
+  .switch__icon-part { display: block; position: absolute; top: 0; left: 0; }
+  .switch__icon {
+    background-color: hsl(var(--hue),10%,90%);
+    border-radius: 50%;
+    overflow: hidden;
+    pointer-events: none;
+    top: 0.125em;
+    left: 0.125em;
+    width: 1.25em;
+    height: 1.25em;
+    transition: transform var(--trans-dur) var(--trans-timing);
+  }
+  .switch__icon-part {
+    transition:
+      box-shadow var(--trans-dur) var(--trans-timing),
+      transform var(--trans-dur) var(--trans-timing);
+  }
+  .switch__icon-part--1,
+  .switch__icon-part--2,
+  .switch__icon-part--3 { border-radius: 50%; }
+  .switch__icon-part--1 {
+    background-color: hsl(var(--hue),10%,90%);
+    top: calc(50% - 0.375em);
+    left: calc(50% - 0.375em);
+    width: 0.75em;
+    height: 0.75em;
+  }
+  .switch__icon-part--2 {
+    background-color: hsl(var(--hue),10%,10%);
+    top: calc(50% - 0.4375em);
+    left: calc(50% - 0.0625em);
+    width: 0.5em;
+    height: 0.5em;
+    transform: translate(-0.1875em,0.1875em) scale(0.2);
+  }
+  .switch__icon-part--3 {
+    box-shadow: 0 0 0 0.625em hsl(var(--hue),10%,10%) inset;
+    width: 1.25em;
+    height: 1.25em;
+    transform: scale(0.25);
+  }
+  .switch__icon-part--3 ~ .switch__icon-part {
+    background-color: hsl(var(--hue),10%,10%);
+    border-radius: 0.0625em;
+    top: 50%;
+    left: 50%;
+    width: 0.125em;
+    height: 0.1875em;
+    transform-origin: 50% 0;
+  }
+  .switch__icon-part--4 { transform: translateX(-50%) rotate(0) translateY(0.25em); }
+  .switch__icon-part--5 { transform: translateX(-50%) rotate(45deg) translateY(0.25em); }
+  .switch__icon-part--6 { transform: translateX(-50%) rotate(90deg) translateY(0.25em); }
+  .switch__icon-part--7 { transform: translateX(-50%) rotate(135deg) translateY(0.25em); }
+  .switch__icon-part--8 { transform: translateX(-50%) rotate(180deg) translateY(0.25em); }
+  .switch__icon-part--9 { transform: translateX(-50%) rotate(225deg) translateY(0.25em); }
+  .switch__icon-part--10 { transform: translateX(-50%) rotate(270deg) translateY(0.25em); }
+  .switch__icon-part--11 { transform: translateX(-50%) rotate(315deg) translateY(0.25em); }
+  .switch__sr { overflow: hidden; position: absolute; width: 1px; height: 1px; }
+
+  .switch__input:checked { background-color: hsl(var(--hue),10%,90%); }
+  .switch__input:checked:before,
+  .switch__input:checked ~ .switch__icon { transform: translateX(1.5em); }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--2 { transform: translate(0,0) scale(1); }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--3 {
+    box-shadow: 0 0 0 0.25em hsl(var(--hue),10%,10%) inset;
+    transform: scale(1);
+  }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--4 { transform: translateX(-50%) rotate(0) translateY(0.625em) scale(0); }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--5 { transform: translateX(-50%) rotate(45deg) translateY(0.625em) scale(0); }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--6 { transform: translateX(-50%) rotate(90deg) translateY(0.625em) scale(0); }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--7 { transform: translateX(-50%) rotate(135deg) translateY(0.625em) scale(0); }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--8 { transform: translateX(-50%) rotate(180deg) translateY(0.625em) scale(0); }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--9 { transform: translateX(-50%) rotate(225deg) translateY(0.625em) scale(0); }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--10 { transform: translateX(-50%) rotate(270deg) translateY(0.625em) scale(0); }
+  .switch__input:checked ~ .switch__icon .switch__icon-part--11 { transform: translateX(-50%) rotate(315deg) translateY(0.625em) scale(0); }
+</style>
+<label class="switch">
+  <input class="switch__input" type="checkbox" role="switch" />
+  <span class="switch__icon">
+    <span class="switch__icon-part switch__icon-part--1"></span>
+    <span class="switch__icon-part switch__icon-part--2"></span>
+    <span class="switch__icon-part switch__icon-part--3"></span>
+    <span class="switch__icon-part switch__icon-part--4"></span>
+    <span class="switch__icon-part switch__icon-part--5"></span>
+    <span class="switch__icon-part switch__icon-part--6"></span>
+    <span class="switch__icon-part switch__icon-part--7"></span>
+    <span class="switch__icon-part switch__icon-part--8"></span>
+    <span class="switch__icon-part switch__icon-part--9"></span>
+    <span class="switch__icon-part switch__icon-part--10"></span>
+    <span class="switch__icon-part switch__icon-part--11"></span>
+  </span>
+  <span class="switch__sr">Dark Mode</span>
+</label>
+<script>
+  (function () {
+    var sw = document.querySelector('.switch__input');
+    if (!sw) return;
+    sw.checked = document.documentElement.getAttribute('data-mode') !== 'light';
+    sw.addEventListener('change', function () {
+      var m = sw.checked ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-mode', m);
+      sessionStorage.setItem('mode', m);
+      window.postMessage({ direction: 'mode-toggle', message: m }, '*');
+    });
+  })();
+</script>
 <script>
   window.addEventListener('load', function () {
     var canvas = document.getElementById('vanta-bg');

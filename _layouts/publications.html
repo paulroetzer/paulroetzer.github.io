@@ -19,11 +19,12 @@ layout: page
     align-items: flex-start;
     padding: 0.9rem 1rem;
     margin-bottom: 0.9rem;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.28);
     backdrop-filter: blur(3px);
     border-radius: 8px;
     transition: transform .15s ease, box-shadow .15s ease;
   }
+  html[data-mode=light] .pub-card { background: rgba(255, 255, 255, 0.4); }
   .pub-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
@@ -34,9 +35,10 @@ layout: page
     width: 200px;
     height: 112px;
     object-fit: contain;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.15);
     border-radius: 5px;
   }
+  html[data-mode=light] .pub-thumb { background: rgba(255, 255, 255, 0.5); }
 
   .pub-info { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
   .pub-title {
