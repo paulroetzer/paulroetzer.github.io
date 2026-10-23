@@ -8,7 +8,7 @@ order: 1
 
 I am a computer vision engineer at Apple . 
 
-Previously, I received my PhD (supervised by <a href="https://lovc.cs.uni-bonn.de/index.php/team/florian-bernard/">Professor Florian Bernard</a>= from University of Bonn where I worked with graphs (and graph algorithms), on correspondence problems, and on optimisation methods, all focused on problems in 3D space.
+Previously, I received my PhD (supervised by <a href="https://lovc.cs.uni-bonn.de/index.php/team/florian-bernard/">Professor Florian Bernard</a>) from University of Bonn where I worked with graphs (and graph algorithms), on correspondence problems, and on optimisation methods, all focused on problems in 3D space.
 
 Before that, I did my Master's degree in Robotics, Cognition, Intelligence as well as my Bachelor's degree in Mechanical Engineering at Technical University of Munich (TUM).
 
